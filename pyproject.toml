@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "stock-api"
+version = "0.1.0"
+description = ""
+authors = ["Lucas Thomas <contatolucasthomas@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "4.2.0"
+djangorestframework = "^3.14.0"
+isort = "^5.12.0"
+black = "^23.11.0"
+flake8 = "^6.1.0"
+mypy = "^1.7.1"
+autopep8 = "^2.0.4"
+psycopg2-binary = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+makemigrations = "poetry run python manage.py makemigrations"
