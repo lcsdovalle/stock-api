@@ -3,7 +3,7 @@ from rest_framework.permissions import IsAuthenticated
 
 from api.authentication import BearerTokenAuthentication
 from product.models.product import Product
-from product.serializers.product import ProductSerializer
+from product.serializers.product import ProductSerializer, CreateUpdateProductSerializer
 
 
 class ActiveProductListView(generics.ListAPIView):
@@ -29,3 +29,7 @@ class ActiveProductListView(generics.ListAPIView):
             queryset = queryset.filter(description__icontains=description)
 
         return queryset
+
+class ProductCreateView(generics.CreateAPIView):
+    queryset = Product.objects.all()
+    serializer_class = CreateUpdateProductSerializer

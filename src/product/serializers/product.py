@@ -10,3 +10,8 @@ class ProductSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         return super(ProductSerializer, self).to_representation(instance)
+
+class CreateUpdateProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = ['name', 'description', 'price_sale', 'price_purchase', 'active']
