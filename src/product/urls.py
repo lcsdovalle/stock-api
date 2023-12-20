@@ -1,6 +1,6 @@
 from django.urls import path
 
-from product.views.list import ActiveProductListView
+from product.views.product import ActiveProductListView
 
 app_name = "product"  # Add the label for the app
 
