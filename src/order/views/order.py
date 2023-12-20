@@ -1,9 +1,11 @@
 from django.utils.dateparse import parse_date
 from rest_framework import generics, serializers
 from rest_framework.permissions import IsAuthenticated
+from rest_framework import status
+from rest_framework.response import Response
 
 from order.models.order import Order
-from order.serializers.order import CreateOrderSerializer, OrderSerializer
+from order.serializers.order import CreateOrderSerializer, OrderSerializer, OrderUpdateSerializer
 
 
 class OrderListView(generics.ListAPIView):
@@ -45,3 +47,25 @@ class OrderListView(generics.ListAPIView):
 class CreateOrderView(generics.CreateAPIView):
     queryset = Order.objects.all()
     serializer_class = CreateOrderSerializer
+
+
+
+class AddProductToOrderView(generics.UpdateAPIView):
+    serializer_class = OrderUpdateSerializer
+
+    def get_object(self):
+        order_id = self.kwargs.get("order_id")
+        return Order.objects.get(id=order_id)
+
+    def perform_update(self, serializer):
+        serializer.add_product(self.get_object(), serializer.validated_data)
+
+class RemoveProductFromOrderView(generics.UpdateAPIView):
+    serializer_class = OrderUpdateSerializer
+
+    def get_object(self):
+        order_id = self.kwargs.get("order_id")
+        return Order.objects.get(id=order_id)
+
+    def perform_update(self, serializer):
+        serializer.remove_product(self.get_object(), serializer.validated_data)

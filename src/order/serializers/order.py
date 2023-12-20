@@ -46,3 +46,27 @@ class CreateOrderSerializer(serializers.ModelSerializer):
         if instance.customer is not None:
             representation["customer"] = instance.customer.id
         return representation
+
+class OrderUpdateSerializer(serializers.ModelSerializer):
+    product_id = serializers.IntegerField(write_only=True)
+
+    class Meta:
+        model = ProductOrder
+        fields = ['product_id', 'id']
+
+    def __get_product(self, validated_data):
+        product_id = validated_data.get('product_id')
+        return Product.objects.get(id=product_id)
+    
+    def remove_product(self, instance: Order, validated_data):
+        
+        product: Product = self.__get_product(validated_data)
+        
+        ProductOrder.objects.filter(order=instance, product=product).delete()
+        return instance
+
+    def add_product(self, instance: Order, validated_data):
+        
+        product: Product = self.__get_product(validated_data)
+        ProductOrder.objects.create(order=instance, product=product)
+        return instance
