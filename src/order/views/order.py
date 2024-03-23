@@ -5,7 +5,11 @@ from rest_framework import status
 from rest_framework.response import Response
 
 from order.models.order import Order
-from order.serializers.order import CreateOrderSerializer, OrderSerializer, OrderUpdateSerializer
+from order.serializers.order import (
+    CreateOrderSerializer,
+    OrderSerializer,
+    OrderUpdateSerializer,
+)
 
 
 class OrderListView(generics.ListAPIView):
@@ -41,13 +45,12 @@ class OrderListView(generics.ListAPIView):
                     created_at__date__lte=date.today(),
                     customer__last_name__icontains=customer_name,
                 )
-        return queryset
+        return queryset.order_by("-created_at")
 
 
 class CreateOrderView(generics.CreateAPIView):
     queryset = Order.objects.all()
     serializer_class = CreateOrderSerializer
-
 
 
 class AddProductToOrderView(generics.UpdateAPIView):
@@ -59,6 +62,7 @@ class AddProductToOrderView(generics.UpdateAPIView):
 
     def perform_update(self, serializer):
         serializer.add_product(self.get_object(), serializer.validated_data)
+
 
 class RemoveProductFromOrderView(generics.UpdateAPIView):
     serializer_class = OrderUpdateSerializer

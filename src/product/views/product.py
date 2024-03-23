@@ -30,6 +30,7 @@ class ActiveProductListView(generics.ListAPIView):
 
         return queryset
 
+
 class ProductCreateView(generics.CreateAPIView):
     queryset = Product.objects.all()
     serializer_class = CreateUpdateProductSerializer

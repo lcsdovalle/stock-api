@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ["*"]
 # Configure CORS
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",  # Allow your frontend's origin
+    "http://*"
 ]
 
 # Application definition
@@ -50,9 +51,8 @@ INSTALLED_APPS = [
     "order.apps.OrderConfig",
     "customer.apps.CustomerConfig",
     "purchase.apps.PurchaseConfig",
-    
-    #CORS
-    "corsheaders"
+    # CORS
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -63,7 +63,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    'corsheaders.middleware.CorsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "api.urls"
@@ -104,7 +104,7 @@ DATABASES = {
         "USER": "admin",  # Database user
         "PASSWORD": "zxzx1212",  # Database password
         "HOST": "localhost",  # Set to localhost for local development
-        "PORT": "5432",  # Default PostgreSQL port
+        "PORT": "5433",  # Default PostgreSQL port
     }
 }
 
@@ -161,3 +161,7 @@ REST_FRAMEWORK = {
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,  # Adjust the page size as needed
 }
+
+
+# MISC
+API_VERSION = "api/v1"

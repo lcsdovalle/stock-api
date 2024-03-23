@@ -1,15 +1,17 @@
 from django.urls import include, path
 
 from users.admin import admin_site
+from api.settings import API_VERSION
+
 
 app_name = "api"  # Add the label for the app
 
 urlpatterns = [
     path("admin/", admin_site.urls),
-    path("api/v1/users/", include("users.urls")),
-    path("api/v1/stock/", include("stock.urls")),
-    path("api/v1/product/", include("product.urls")),
-    path("api/v1/order/", include("order.urls")),
-    path("api/v1/customer/", include("customer.urls")),
-    path("api/v1/purchase/", include("purchase.urls")),
+    path(f"{API_VERSION}/users/", include("users.urls")),
+    path(f"{API_VERSION}/stock/", include("stock.urls")),
+    path(f"{API_VERSION}/product/", include("product.urls")),
+    path(f"{API_VERSION}/order/", include("order.urls")),
+    path(f"{API_VERSION}/customer/", include("customer.urls")),
+    path(f"{API_VERSION}/purchase/", include("purchase.urls")),
 ]
