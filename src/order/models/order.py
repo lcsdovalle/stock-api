@@ -3,11 +3,12 @@ from decimal import Decimal  # Import the Decimal class
 from django.conf import settings
 from django.db import models
 
+from api.basemodel import BaseModel  # Import the BaseModel class
 from customer.models.customer import Customer
 from product.models.product import Product  # Import the Product model
 
 
-class Order(models.Model):
+class Order(BaseModel):
     # Many-to-many relationship to the Product model
     products = models.ManyToManyField(
         Product, through="order.ProductOrder", related_name="orders"

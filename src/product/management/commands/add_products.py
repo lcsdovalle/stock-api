@@ -3,9 +3,7 @@ from decimal import Decimal
 
 from django.core.management.base import BaseCommand
 
-from product.models.product import (
-    Product,
-)  # Update with the actual path to your Product model
+from product.models.product import Product  # isort: skip_line
 
 
 class Command(BaseCommand):

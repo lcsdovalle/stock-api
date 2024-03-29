@@ -3,7 +3,7 @@ from rest_framework.permissions import IsAuthenticated
 
 from api.authentication import BearerTokenAuthentication
 from product.models.product import Product
-from product.serializers.product import ProductSerializer, CreateUpdateProductSerializer
+from product.serializers.product import CreateUpdateProductSerializer, ProductSerializer
 
 
 class ActiveProductListView(generics.ListAPIView):

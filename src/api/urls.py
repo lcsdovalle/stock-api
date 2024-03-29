@@ -1,8 +1,7 @@
 from django.urls import include, path
 
-from users.admin import admin_site
 from api.settings import API_VERSION
-
+from users.admin import admin_site
 
 app_name = "api"  # Add the label for the app
 

@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ["*"]
 # Configure CORS
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",  # Allow your frontend's origin
-    "http://*"
+    "http://*",
 ]
 
 # Application definition

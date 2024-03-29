@@ -1,9 +1,9 @@
-import uuid
-
 from django.db import models
 
+from api.basemodel import BaseModel
 
-class Product(models.Model):
+
+class Product(BaseModel):
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True)
     price_sale = models.DecimalField(max_digits=10, decimal_places=2)

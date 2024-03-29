@@ -3,7 +3,7 @@ from django.utils.dateparse import parse_date
 from rest_framework import generics
 
 from purchase.models.purchase import Purchase
-from purchase.serializers.purchase import ListPurchaseSerializer, PurchaseSerializer
+from purchase.serializers.purchase import ListPurchaseSerializer
 
 
 class PurchaseListView(generics.ListAPIView):
@@ -28,4 +28,4 @@ class PurchaseListView(generics.ListAPIView):
                 | Q(origin_order__customer__last_name__icontains=customer_name)
             )
 
-        return queryset
+        return queryset.order_by("-created_at")

@@ -1,9 +1,9 @@
 from django.urls import path
 
-from order.views.order import (
+from order.views.order import (  # isort: skip
+    AddProductToOrderView,
     CreateOrderView,
     OrderListView,
-    AddProductToOrderView,
     RemoveProductFromOrderView,
 )
 

@@ -1,15 +1,14 @@
+# isort: skip_file
 from django.utils.dateparse import parse_date
-from rest_framework import generics, serializers
+from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
-from rest_framework import status
-from rest_framework.response import Response
 
 from order.models.order import Order
 from order.serializers.order import (
     CreateOrderSerializer,
     OrderSerializer,
     OrderUpdateSerializer,
-)
+)  # isort: skip
 
 
 class OrderListView(generics.ListAPIView):
@@ -35,16 +34,16 @@ class OrderListView(generics.ListAPIView):
         if date_from is not None:
             date = parse_date(date_from)
             queryset = queryset.filter(
+                created_at__date__gte=date, created_at__date__lte=date.today()
+            )
+        if customer_name is not None:
+            queryset = queryset.filter(customer__first_name__icontains=customer_name)
+        if not queryset.exists():
+            queryset = Order.objects.filter(
                 created_at__date__gte=date,
                 created_at__date__lte=date.today(),
-                customer__first_name__icontains=customer_name,
+                customer__last_name__icontains=customer_name,
             )
-            if not queryset.exists():
-                queryset = Order.objects.filter(
-                    created_at__date__gte=date,
-                    created_at__date__lte=date.today(),
-                    customer__last_name__icontains=customer_name,
-                )
         return queryset.order_by("-created_at")
 
 

@@ -1,19 +1,29 @@
 from rest_framework import serializers
 
+from customer.serializers.customer import CustomerSerializer
 from order.models.order import Order
 from order.models.product_order import ProductOrder
 from product.models.product import Product
 from product.serializers.product import ProductSerializer
-from customer.serializers.customer import CustomerSerializer
+
 
 class OrderSerializer(serializers.ModelSerializer):
-    products = ProductSerializer(many=True)
+    products = serializers.SerializerMethodField()
     customer = CustomerSerializer(read_only=True)
+
     class Meta:
         model = Order
         fields = "__all__"  # Adjust the fields as needed
         sorted_fields = ["created_at", "id", "products", "customer", "owner"]
         extra_kwargs = {"owner": {"read_only": True}}
+
+    def get_products(self, instance: Order):
+        product_order: ProductOrder = instance.productorder_set.all()
+        products_to_show: list = [
+            {**p_o.product.to_dict(), "quantity": p_o.quantity} for p_o in product_order
+        ]
+        return products_to_show
+
 
 class CreateOrderSerializer(serializers.ModelSerializer):
     # Assuming products are provided as a list of product IDs and quantities
@@ -28,7 +38,7 @@ class CreateOrderSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         products_data = validated_data.pop("products")
-        order_data  = {**validated_data, "owner": self.context["request"].user}
+        order_data = {**validated_data, "owner": self.context["request"].user}
         order = Order.objects.create(**order_data)
         for product_data in products_data:
             product_id = product_data["product"]
