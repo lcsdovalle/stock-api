@@ -38,12 +38,7 @@ class OrderListView(generics.ListAPIView):
             )
         if customer_name is not None:
             queryset = queryset.filter(customer__first_name__icontains=customer_name)
-        if not queryset.exists():
-            queryset = Order.objects.filter(
-                created_at__date__gte=date,
-                created_at__date__lte=date.today(),
-                customer__last_name__icontains=customer_name,
-            )
+
         return queryset.order_by("-created_at")
 
 

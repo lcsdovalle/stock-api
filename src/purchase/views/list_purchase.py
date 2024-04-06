@@ -16,6 +16,7 @@ class PurchaseListView(generics.ListAPIView):
         queryset = Purchase.objects.all()
         date_from = self.request.query_params.get("date_from")
         customer_name = self.request.query_params.get("customer_name")
+        customer_id = self.request.query_params.get("customer_id")
 
         if date_from:
             date_from = parse_date(date_from)
@@ -27,5 +28,6 @@ class PurchaseListView(generics.ListAPIView):
                 Q(origin_order__customer__first_name__icontains=customer_name)
                 | Q(origin_order__customer__last_name__icontains=customer_name)
             )
-
+        if customer_id:
+            queryset = queryset.filter(origin_order__customer_id=customer_id)
         return queryset.order_by("-created_at")
