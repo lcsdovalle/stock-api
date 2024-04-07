@@ -23,8 +23,12 @@ class ProductSerializer(serializers.ModelSerializer):
         return super(ProductSerializer, self).to_representation(instance)
 
     def get_stock_quantity(self, instance):
-        stock_product = Stock.objects.get(product=instance)
-        return stock_product.quantity
+        try:
+            stock_product = Stock.objects.get(product=instance)
+            return stock_product.quantity
+        except Exception as e:
+            print(e)
+            return 0
 
 
 class CreateUpdateProductSerializer(serializers.ModelSerializer):

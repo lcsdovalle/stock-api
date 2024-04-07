@@ -7,6 +7,7 @@ from rest_framework.views import APIView
 from order.models.order import Order
 from order.models.product_order import ProductOrder
 from purchase.serializers.purchase import PurchaseSerializer
+from stock.models.stock import Stock
 
 
 class TransformOrderToPurchaseView(APIView):
@@ -15,6 +16,11 @@ class TransformOrderToPurchaseView(APIView):
 
     def __convert_datetime_to_string(self, datetime_value):
         return datetime_value.strftime("%Y-%m-%d %H:%M:%S")
+
+    def __udpate_stock_upon_purchase(self, product: ProductOrder):
+        """Updates the stock quantity upon purchase of a product."""
+        stock = Stock.objects.get(product=product.product)
+        stock.update_quantity(product.quantity)
 
     def post(self, request):
         customer_info = {}
@@ -42,6 +48,7 @@ class TransformOrderToPurchaseView(APIView):
             products: list[ProductOrder] = order.productorder_set.all()
             if products:
                 for product in products:
+                    self.__udpate_stock_upon_purchase(product)
                     product_dict = {
                         "id": product.product.id,
                         "name": product.product.name,
