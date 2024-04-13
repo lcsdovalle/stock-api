@@ -8,7 +8,7 @@ from order.models.order import Order
 from order.models.product_order import ProductOrder
 from purchase.serializers.purchase import PurchaseSerializer
 from stock.models.stock import Stock
-
+from product.models.product import Product
 
 class TransformOrderToPurchaseView(APIView):
     def __convert_decimal_to_string(self, decimal_value):
@@ -19,8 +19,23 @@ class TransformOrderToPurchaseView(APIView):
 
     def __udpate_stock_upon_purchase(self, product: ProductOrder):
         """Updates the stock quantity upon purchase of a product."""
-        stock = Stock.objects.get(product=product.product)
-        stock.update_quantity(product.quantity)
+        stock = self.__get_product_stock(product.product)
+        if stock:
+            stock.update_quantity(product.quantity)
+        else:
+            self.__create_product_stock(product.product, product.quantity)
+
+    def __get_product_stock(self, product: Product):
+        try:
+            return Stock.objects.get(product=product)
+        except Stock.DoesNotExist:
+            return None
+        except Exception as e:
+            print(e)
+            return None
+    
+    def __create_product_stock(self, product: Product, quantity: int):
+        Stock.objects.create(product=product, quantity=quantity)
 
     def post(self, request):
         customer_info = {}
