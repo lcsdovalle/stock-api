@@ -1,12 +1,12 @@
 from django.db.models import Q
 from rest_framework import generics, status
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
 
 from api.authentication import BearerTokenAuthentication
 from product.models.product import Product
 from product.serializers.product import CreateProductSerializer, ProductSerializer, UpdateProductSerializer
 from stock.models.stock import Stock
-from rest_framework.response import Response
 
 
 class ActiveProductListView(generics.ListAPIView):
@@ -33,8 +33,7 @@ class ActiveProductListView(generics.ListAPIView):
                 queryset = queryset.filter(pk=search)
             else:
                 queryset = queryset.filter(
-                    Q(name__icontains=search)
-                    | Q(description__icontains=search)
+                    Q(name__icontains=search) | Q(description__icontains=search)
                 )
 
         return queryset.order_by("-updated_at")
@@ -67,10 +66,10 @@ class ProductUpdateView(generics.UpdateAPIView):
             return Stock.objects.get(product=product)
         except Stock.DoesNotExist:
             return None
-    
+
     def __create_product_stock(self, product: Product, quantity: int):
         Stock.objects.create(product=product, quantity=quantity)
-    
+
     def put(self, request, *args, **kwargs):
         product = self.get_object()
         quantity: int = request.data.pop("stock_quantity")
@@ -83,9 +82,9 @@ class ProductUpdateView(generics.UpdateAPIView):
                 product_stock.save()
             else:
                 self.__create_product_stock(product, quantity)
-            
+
             # Update product data
             serializer.save()
-            
+
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

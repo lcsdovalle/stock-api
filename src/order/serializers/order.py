@@ -5,11 +5,13 @@ from order.models.order import Order
 from order.models.product_order import ProductOrder
 from product.models.product import Product
 from product.serializers.product import ProductSerializer
+from users.serializers.user import UserSerializer
 
 
 class OrderSerializer(serializers.ModelSerializer):
     products = serializers.SerializerMethodField()
     customer = CustomerSerializer(read_only=True)
+    owner = UserSerializer(read_only=True)
 
     class Meta:
         model = Order
@@ -49,6 +51,10 @@ class CreateOrderSerializer(serializers.ModelSerializer):
         order.save()
         order.refresh_from_db()
         return order
+
+    def save(self, **kwargs):
+        self.instance
+        return super().save(**kwargs)
 
     def to_representation(self, instance: Order):
         representation = {}

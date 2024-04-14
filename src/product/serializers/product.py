@@ -36,11 +36,21 @@ class CreateProductSerializer(serializers.ModelSerializer):
         model = Product
         fields = ["name", "description", "price_sale", "price_purchase", "active"]
 
+
 class UpdateProductSerializer(serializers.ModelSerializer):
     stock_quantity = serializers.SerializerMethodField()
+
     class Meta:
         model = Product
-        fields = ["name", "description", "price_sale", "price_purchase", "active", "id", "stock_quantity"]
+        fields = [
+            "name",
+            "description",
+            "price_sale",
+            "price_purchase",
+            "active",
+            "id",
+            "stock_quantity",
+        ]
         extra_kwargs = {
             "pk": {"required": True},
             # "name": {"required": False},
@@ -49,7 +59,7 @@ class UpdateProductSerializer(serializers.ModelSerializer):
             # "price_purchase": {"required": False},
             # "active": {"required": False},
         }
-    
+
     def get_stock_quantity(self, instance):
         try:
             stock_product = Stock.objects.get(product=instance)

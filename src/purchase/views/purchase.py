@@ -6,9 +6,11 @@ from rest_framework.views import APIView
 
 from order.models.order import Order
 from order.models.product_order import ProductOrder
+from product.models.product import Product
+from purchase.models.purchase import Purchase
 from purchase.serializers.purchase import PurchaseSerializer
 from stock.models.stock import Stock
-from product.models.product import Product
+
 
 class TransformOrderToPurchaseView(APIView):
     def __convert_decimal_to_string(self, decimal_value):
@@ -33,9 +35,18 @@ class TransformOrderToPurchaseView(APIView):
         except Exception as e:
             print(e)
             return None
-    
+
     def __create_product_stock(self, product: Product, quantity: int):
         Stock.objects.create(product=product, quantity=quantity)
+
+    def __check_if_purchase_exists(self, order_id):
+        try:
+            return Purchase.objects.get(origin_order=order_id)
+        except Purchase.DoesNotExist:
+            return None
+        except Exception as e:
+            print(e)
+            return None
 
     def post(self, request):
         customer_info = {}
@@ -43,6 +54,11 @@ class TransformOrderToPurchaseView(APIView):
         order_id = request.data.get("order_id")
         try:
             order: Order = Order.objects.get(id=order_id)
+            if self.__check_if_purchase_exists(order_id):
+                return Response(
+                    {"error": "Purchase already exists"},
+                    status=status.HTTP_400_BAD_REQUEST,
+                )
             if customer := getattr(order, "customer", None):
                 customer_info = {
                     "first_name": customer.first_name,
