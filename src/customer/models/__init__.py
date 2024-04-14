@@ -1,1 +1,2 @@
-from .customer import Customer  # noqa
+# from customer.models.customer import Customer  # noqa
+# __all__ = ["Customer"]

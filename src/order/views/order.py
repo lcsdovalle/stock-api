@@ -1,8 +1,12 @@
 # isort: skip_file
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
-
+from rest_framework.views import APIView
 from order.models.order import Order
+from django.core.mail import send_mail
+from django.shortcuts import get_object_or_404
+from api.settings import EMAIL_HOST_USER
+from rest_framework.response import Response
 from order.serializers.order import (
     CreateOrderSerializer,
     OrderSerializer,
@@ -64,3 +68,27 @@ class RemoveProductFromOrderView(generics.UpdateAPIView):
 
     def perform_update(self, serializer):
         serializer.remove_product(self.get_object(), serializer.validated_data)
+
+
+class SendEmailView(APIView):
+    def post(self, request):
+        order_id = request.data.get("order_id")
+        order = get_object_or_404(Order, id=order_id)
+        template = f"""
+        Olá <b>{order.customer.first_name}</b><br>,
+        <p>O pedido {order_id} foi criado com sucesso.</p> <br>
+        <p>Atenciosamente,</p> <br>
+        <br>
+        Equipe de vendas.
+        <hr>
+        """
+
+        send_mail(
+            subject="Orçamento",
+            message="",
+            from_email=EMAIL_HOST_USER,
+            recipient_list=[order.customer.email],
+            html_message=template,
+        )
+
+        return Response({"message": "Email enviado com sucesso."})

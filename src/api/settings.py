@@ -165,3 +165,16 @@ REST_FRAMEWORK = {
 
 # MISC
 API_VERSION = "api/v1"
+
+# EMAIL SETTINGS
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "no-reply@seduc.feiradesantana.ba.gov.br"  # Your Gmail address
+EMAIL_HOST_PASSWORD = "zxzx1212"  # The app password you generated
+
+# FIXTURES
+FIXTURE_DIRS = [
+    BASE_DIR / "tests/fixtures",
+]

@@ -1,0 +1,110 @@
+[
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "managers",
+        "permissions": [
+            49,
+            50,
+            51,
+            52,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            37,
+            38,
+            39,
+            40,
+            53,
+            54,
+            55,
+            56
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "saler",
+        "permissions": [
+            41,
+            44,
+            45,
+            48,
+            40,
+            53,
+            56,
+            36
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+        "name": "regular_saler",
+        "permissions": [
+            49,
+            41,
+            44,
+            45,
+            48,
+            40,
+            53,
+            56,
+            36
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 4,
+    "fields": {
+        "name": "financial",
+        "permissions": [
+            38,
+            34
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 5,
+    "fields": {
+        "name": "admin",
+        "permissions": [
+            49,
+            50,
+            51,
+            52,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            37,
+            38,
+            39,
+            40,
+            53,
+            54,
+            55,
+            56,
+            33,
+            34,
+            35,
+            36
+        ]
+    }
+}
+]

@@ -5,7 +5,7 @@ from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from customer.models import Customer
+from customer.models.customer import Customer
 from customer.serializers.customer import CustomerSerializer
 
 

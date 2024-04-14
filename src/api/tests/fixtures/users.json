@@ -1,0 +1,62 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$tJDu3rZOsbmJZs0PynnxiV$14tPsQLT+Jn5phMbsPm1L2b4vyV0+90mrnu4a70cBNU=",
+        "last_login": "2024-04-13T17:25:30.715Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "contatolucasthomas@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-12-20T12:30:41Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$v7EThxMHkSL32VjrEOdCs4$wY/bepzp9JBW0ujGDj935I5Spg+ECes0qDXeSRx0mL0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "vendedor-emerson",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-04-07T17:49:34Z",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$a1aLe9SDPFcv3cXiGLTUTK$fp9x5/4HewmW4wqJWbsZ/Qcz9mxyI9u1V9rAtFmaQY0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "financeiro",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-04-13T17:51:57Z",
+        "groups": [
+            4
+        ],
+        "user_permissions": []
+    }
+}
+]

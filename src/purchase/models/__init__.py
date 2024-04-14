@@ -1,1 +1,3 @@
-from .purchase import Purchase  # noqa
+from purchase.models.purchase import Purchase  # noqa
+
+__all__ = ["Purchase"]
