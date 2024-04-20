@@ -25,7 +25,12 @@ SECRET_KEY = "django-insecure-r0&#-b=zi-gk=8v0k&j(k%-qe9z@#y3v^mm-t_u0uv)d==isc6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["estoque.comunicloud.com.br","api.comunicloud.com.br", "https://api.comunicloud.com.br", "34.122.98.103"]
+ALLOWED_HOSTS = [
+    "estoque.comunicloud.com.br",
+    "api.comunicloud.com.br",
+    "https://api.comunicloud.com.br",
+    "34.122.98.103",
+]
 
 # Configure CORS
 CORS_ALLOWED_ORIGINS = [
@@ -87,8 +92,8 @@ TEMPLATES = [
     },
 ]
 
-STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 WSGI_APPLICATION = "api.wsgi.application"
 

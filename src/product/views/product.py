@@ -5,7 +5,11 @@ from rest_framework.response import Response
 
 from api.authentication import BearerTokenAuthentication
 from product.models.product import Product
-from product.serializers.product import CreateProductSerializer, ProductSerializer, UpdateProductSerializer
+from product.serializers.product import (
+    CreateProductSerializer,
+    ProductSerializer,
+    UpdateProductSerializer,
+)
 from stock.models.stock import Stock
 
 

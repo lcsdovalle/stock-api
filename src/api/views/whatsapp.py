@@ -12,7 +12,6 @@ from api.services_helpers.helpers import generate_body_message
 
 
 class WhatsappAPIView(APIView):
-
     def __sanitize_phone(self, phone: str) -> str:
         if phone:
             sanitized_phone = re.sub(r"\D", "", phone)
