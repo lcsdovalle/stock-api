@@ -84,6 +84,9 @@ TEMPLATES = [
     },
 ]
 
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 WSGI_APPLICATION = "api.wsgi.application"
 
 
@@ -103,8 +106,9 @@ DATABASES = {
         "NAME": "mydatabase",  # The name of your database
         "USER": "admin",  # Database user
         "PASSWORD": "zxzx1212",  # Database password
-        "HOST": "localhost",  # Set to localhost for local development
-        "PORT": "5433",  # Default PostgreSQL port
+        # "HOST": "localhost",  # Set to localhost for local development
+        "HOST": "db",  # Set to localhost for local development
+        "PORT": "5432",  # Default PostgreSQL port
     }
 }
 
@@ -178,3 +182,6 @@ EMAIL_HOST_PASSWORD = "zxzx1212"  # The app password you generated
 FIXTURE_DIRS = [
     BASE_DIR / "tests/fixtures",
 ]
+
+# VENON-WHATSAPP-BOT
+VENON_BOT_ENDPOINT = "http://localhost:3000"

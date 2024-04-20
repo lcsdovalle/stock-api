@@ -13,6 +13,8 @@ from order.serializers.order import (
     OrderUpdateSerializer,
 )  # isort: skip
 
+from api.services_helpers.helpers import generate_body_message
+
 
 class OrderListView(generics.ListAPIView):
     serializer_class = OrderSerializer
@@ -74,14 +76,7 @@ class SendEmailView(APIView):
     def post(self, request):
         order_id = request.data.get("order_id")
         order = get_object_or_404(Order, id=order_id)
-        template = f"""
-        Olá <b>{order.customer.first_name}</b><br>,
-        <p>O pedido {order_id} foi criado com sucesso.</p> <br>
-        <p>Atenciosamente,</p> <br>
-        <br>
-        Equipe de vendas.
-        <hr>
-        """
+        template = generate_body_message(order_model=order, format="email")
 
         send_mail(
             subject="Orçamento",
