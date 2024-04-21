@@ -11,6 +11,7 @@ from product.serializers.product import (
     UpdateProductSerializer,
 )
 from stock.models.stock import Stock
+from decimal import Decimal
 
 
 class ActiveProductListView(generics.ListAPIView):
@@ -51,14 +52,23 @@ class ProductCreateView(generics.CreateAPIView):
         Stock.objects.create(product=product, quantity=quantity)
 
     def post(self, request, *args, **kwargs):
-        quantity: int = request.data.pop("stock_quantity")
-        request.data.pop("id", None)
-        request.data.pop("created_at", None)
-        serializer = self.get_serializer(data=request.data)
-        if serializer.is_valid():
-            fresh_product: Product = Product.objects.create(**serializer.validated_data)
-            self.__update_stock(fresh_product, quantity)
-            return self.create(request, *args, **kwargs)
+        try:
+            quantity: int = request.data.pop("stock_quantity")
+            request.data.pop("id", None)
+            request.data.pop("created_at", None)
+            request.data["price_sale"] = Decimal(request.data["price_sale"])
+            serializer = self.get_serializer(data=request.data)
+            if serializer.is_valid(raise_exception=True):
+                fresh_product: Product = Product.objects.create(
+                    **serializer.validated_data
+                )
+                self.__update_stock(fresh_product, quantity)
+
+                return Response("Ok", 200)
+            return Response("Fail", 400)
+        except Exception as e:
+            print(e)
+            raise e
 
 
 class ProductUpdateView(generics.UpdateAPIView):
