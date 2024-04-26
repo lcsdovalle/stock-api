@@ -2,9 +2,7 @@ from django.conf import settings
 from django.db import models
 from django.db.models import JSONField
 
-from order.models.order import (
-    Order,
-)  # Assuming your order model is in an app named 'order'
+from order.models.order import Order  # Assuming your order model is in an app named 'order'
 
 
 class Purchase(models.Model):

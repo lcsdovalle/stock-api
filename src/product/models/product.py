@@ -2,6 +2,7 @@ from django.db import models
 
 from api.basemodel import BaseModel
 
+
 class Product(BaseModel):
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True)
@@ -20,5 +21,5 @@ class Product(BaseModel):
     def save(self, *args, **kwargs):
         if self.price_sale is not None:
             self.price_purchase = self.price_sale
-        
+
         super().save(*args, **kwargs)

@@ -1,10 +1,6 @@
 from django.urls import path
 
-from customer.views.customer import (
-    CustomerByCPFView,
-    CustomerCreateView,
-    CustomerListView,
-)
+from customer.views.customer import CustomerByCPFView, CustomerCreateView, CustomerListView
 
 app_name = "customer"  # Add the label for the app
 

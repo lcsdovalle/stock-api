@@ -6,6 +6,7 @@ from order.views.order import (  # isort: skip
     OrderListView,
     RemoveProductFromOrderView,
     SendEmailView,
+    send_pdf_to_frontend,
 )
 
 app_name = "order"  # Add the label for the app
@@ -27,5 +28,10 @@ urlpatterns = [
         "send-email",
         SendEmailView.as_view(),
         name="send-email",
+    ),
+    path(
+        "print-order/",
+        send_pdf_to_frontend,
+        name="print-order",
     ),
 ]

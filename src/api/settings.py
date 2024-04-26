@@ -30,6 +30,8 @@ ALLOWED_HOSTS = [
     "api.comunicloud.com.br",
     "https://api.comunicloud.com.br",
     "34.122.98.103",
+    "localhost",
+    "127.0.0.1",
 ]
 
 # Configure CORS
@@ -114,9 +116,10 @@ DATABASES = {
         "NAME": "mydatabase",  # The name of your database
         "USER": "admin",  # Database user
         "PASSWORD": "zxzx1212",  # Database password
-        # "HOST": "localhost",  # Set to localhost for local development
-        "HOST": "db",  # Set to localhost for local development
-        "PORT": "5432",  # Default PostgreSQL port
+        "HOST": "localhost",  # Set to localhost for local development
+        # "HOST": "db",  # Set to localhost for local development
+        # "PORT": "5432",  # Default PostgreSQL port
+        "PORT": "5433",  # Default PostgreSQL port
     }
 }
 
@@ -193,3 +196,7 @@ FIXTURE_DIRS = [
 
 # VENON-WHATSAPP-BOT
 VENON_BOT_ENDPOINT = "http://localhost:3000"
+
+# FILES MEDIA
+MEDIA_URL = "/files/"
+MEDIA_ROOT = BASE_DIR / "files"

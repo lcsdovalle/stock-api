@@ -1,3 +1,5 @@
+from decimal import Decimal
+
 from django.db.models import Q
 from rest_framework import generics, status
 from rest_framework.permissions import IsAuthenticated
@@ -5,13 +7,8 @@ from rest_framework.response import Response
 
 from api.authentication import BearerTokenAuthentication
 from product.models.product import Product
-from product.serializers.product import (
-    CreateProductSerializer,
-    ProductSerializer,
-    UpdateProductSerializer,
-)
+from product.serializers.product import CreateProductSerializer, ProductSerializer, UpdateProductSerializer
 from stock.models.stock import Stock
-from decimal import Decimal
 
 
 class ActiveProductListView(generics.ListAPIView):

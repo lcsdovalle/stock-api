@@ -12,7 +12,14 @@ class PurchaseListView(generics.ListAPIView):
         """
         Optionally filters the returned purchases based on 'date_from' and 'customer_name'.
         """
-        queryset = Purchase.objects.all()
+
+        if (
+            self.request.user.is_superuser
+            or "manager" in self.request.user.groups.values_list("name", flat=True)
+        ):
+            queryset = Purchase.objects.all()
+        else:
+            queryset = queryset = Purchase.objects.filter(owner=self.request.user)
         customer_name = self.request.query_params.get("customer_name")
         customer_id = self.request.query_params.get("customer_id")
         month_number = self.request.query_params.get("month_number")
