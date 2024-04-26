@@ -28,6 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "estoque.comunicloud.com.br",
     "api.comunicloud.com.br",
+    "speed.cloudflare.com",
+    "*.cloudflare.com",
     "https://api.comunicloud.com.br",
     "34.122.98.103",
     "localhost",
