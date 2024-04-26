@@ -47,9 +47,9 @@ def save_order_pdf(order_id):
         product_name = Paragraph(product_order.product.name, product_style)  # Wrap product names in a Paragraph
         row = [
             product_name,
-            f"${product_order.product.price_sale:.2f}",
+            f"R${product_order.product.price_sale:.2f}",
             product_order.quantity,
-            f"${product_order.product.price_sale * product_order.quantity:.2f}",
+            f"R${product_order.product.price_sale * product_order.quantity:.2f}",
         ]
         data.append(row)
 

@@ -118,10 +118,10 @@ DATABASES = {
         "NAME": "mydatabase",  # The name of your database
         "USER": "admin",  # Database user
         "PASSWORD": "zxzx1212",  # Database password
-        "HOST": "localhost",  # Set to localhost for local development
-        # "HOST": "db",  # Set to localhost for local development
-        # "PORT": "5432",  # Default PostgreSQL port
-        "PORT": "5433",  # Default PostgreSQL port
+        # "HOST": "localhost",  # Set to localhost for local development
+        "HOST": "db",  # Set to localhost for local development
+        "PORT": "5432",  # Default PostgreSQL port
+        # "PORT": "5433",  # Default PostgreSQL port
     }
 }
 
