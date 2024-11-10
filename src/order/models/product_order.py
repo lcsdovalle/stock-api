@@ -14,4 +14,4 @@ class ProductOrder(models.Model):
         unique_together = (
             "product",
             "order",
-        )  # Ensure each product appears only once per order
+        )
