@@ -14,5 +14,10 @@ class Stock(models.Model):
     def __str__(self):
         return f"{self.product.name} - {self.quantity}"
 
+    def update_quantity(self, sold_quantity):
+        if self.quantity > 0:
+            self.quantity -= sold_quantity
+            self.save()
+
     class Meta:
         app_label = "stock"

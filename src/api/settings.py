@@ -12,22 +12,27 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+import environ
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+env = environ.Env()
+environ.Env.read_env(BASE_DIR / ".env")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-r0&#-b=zi-gk=8v0k&j(k%-qe9z@#y3v^mm-t_u0uv)d==isc6"
+SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=[])
 
-
+# Configure CORS
+CORS_ALLOWED_ORIGINS = env.list("CORS_ALLOWED_ORIGINS", default=[])
 # Application definition
 
 INSTALLED_APPS = [
@@ -46,6 +51,8 @@ INSTALLED_APPS = [
     "order.apps.OrderConfig",
     "customer.apps.CustomerConfig",
     "purchase.apps.PurchaseConfig",
+    # CORS
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -56,6 +63,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "api.urls"
@@ -76,27 +84,25 @@ TEMPLATES = [
     },
 ]
 
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 WSGI_APPLICATION = "api.wsgi.application"
 
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
-
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "mydatabase",  # The name of your database
-        "USER": "admin",  # Database user
-        "PASSWORD": "zxzx1212",  # Database password
-        "HOST": "localhost",  # Set to localhost for local development
-        "PORT": "5432",  # Default PostgreSQL port
+        "NAME": "mydatabase",
+        "USER": "admin",
+        "PASSWORD": "zxzx1212",
+        "HOST": "localhost",
+        # "HOST": "db",
+        # "PORT": "5432",
+        "PORT": "5436",
     }
 }
 
@@ -153,3 +159,31 @@ REST_FRAMEWORK = {
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,  # Adjust the page size as needed
 }
+
+# MISC
+API_VERSION = "api/v1"
+
+# EMAIL SETTINGS
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = env("EMAIL_HOST")
+EMAIL_PORT = env.int("EMAIL_PORT")
+EMAIL_USE_TLS = env.bool("EMAIL_USE_TLS")
+EMAIL_HOST_USER = env("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
+
+# FIXTURES
+FIXTURE_DIRS = [
+    BASE_DIR / "tests/fixtures",
+]
+FIXTURES_LOAD_SEQUENCE = [
+    "api/tests/fixtures/groups",
+    "api/tests/fixtures/users",
+    "customer/tests/fixtures/customers",
+    "order/tests/fixtures/order",
+]
+# VENON WPP BOT ENDPOINT
+VENON_BOT_ENDPOINT = env("VENON_BOT_ENDPOINT")
+
+# FILES MEDIA
+MEDIA_URL = "/files/"
+MEDIA_ROOT = BASE_DIR / "files"

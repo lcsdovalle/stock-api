@@ -7,9 +7,35 @@ services:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: zxzx1212
     ports:
-      - "5432:5432"
+      - "5436:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+  web:
+    build: .
+    volumes:
+      - .:/code
+      - static_volume:/code/src/staticfiles 
+    expose:
+      - 8000
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+      
 
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - static_volume:/code/src/staticfiles
+    ports:
+      - "80:80"
+    depends_on:
+      - web
 volumes:
   postgres_data:
+  static_volume:
+
+networks:
+  default:
+    driver: bridge

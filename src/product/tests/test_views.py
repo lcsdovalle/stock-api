@@ -1,11 +1,9 @@
-import pdb
-
 from django.contrib.auth.models import User
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APIClient, APITestCase, override_settings
 
-from .models.product import Product
+from product.models.product import Product
 
 
 @override_settings(REST_FRAMEWORK={"DEFAULT_AUTHENTICATION_CLASSES": []})
@@ -44,12 +42,11 @@ class ProductTests(APITestCase):
         """
         Ensure we can retrieve active products.
         """
-        url = reverse("active_products")
+        url = reverse("product:active_products")
         response = self.client.get(url)
 
         # Check that the response is 200 OK.
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        # pdb.set_trace()
 
         # Check that we get only active products
         for product in response.data["results"]:
@@ -59,7 +56,7 @@ class ProductTests(APITestCase):
         """
         Ensure we can filter products by id.
         """
-        url = reverse("active_products") + "?id=1"
+        url = reverse("product:active_products") + "?id=1"
         response = self.client.get(url)
 
         # Check that the response is 200 OK.

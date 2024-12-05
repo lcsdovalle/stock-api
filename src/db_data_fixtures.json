@@ -1,0 +1,2592 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2023-12-22T23:22:34.899Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Essência 1 - 10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2023-12-22T23:22:43.122Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Essência 1 - 10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2023-12-22T23:24:19.971Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Essência 1 - 10",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2023-12-22T23:24:26.535Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Essência 1 - 10",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2023-12-22T23:24:47.822Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Essência 0 - 10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2023-12-22T23:25:02.270Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Essência 1 - 10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2023-12-22T23:25:06.677Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "Aroma 2 - 10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2023-12-22T23:25:11.629Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "6",
+        "object_repr": "Aroma 3 - 10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2023-12-22T23:25:16.326Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "7",
+        "object_repr": "Perfume 4 - 10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2023-12-22T23:25:21.476Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "8",
+        "object_repr": "Óleo de amora - 10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-03-23T16:55:29.296Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Emerson Santos",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-03-23T16:55:45.309Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Emerson Santos",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Cpf\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-03-23T17:12:05.482Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Emerson Santos",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Cpf\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-03-29T15:34:58.622Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "Purchase 3 from Order 15",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-03-29T15:34:58.628Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Purchase 2 from Order 16",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-03-29T15:34:58.630Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Purchase 1 from Order 16",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.621Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "13",
+        "object_repr": "Order 13 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.624Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "12",
+        "object_repr": "Order 12 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.626Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "11",
+        "object_repr": "Order 11 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.629Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "10",
+        "object_repr": "Order 10 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.631Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "9",
+        "object_repr": "Order 9 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.633Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "8",
+        "object_repr": "Order 8 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.635Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "7",
+        "object_repr": "Order 7 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.636Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "6",
+        "object_repr": "Order 6 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.638Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "5",
+        "object_repr": "Order 5 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.640Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "Order 3 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.642Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "2",
+        "object_repr": "Order 2 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-03-29T16:02:04.644Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Order 1 by admin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-03-29T16:23:52.869Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "8",
+        "object_repr": "Purchase 8 from Order 16",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-03-29T16:23:52.872Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "7",
+        "object_repr": "Purchase 7 from Order 16",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-03-29T16:23:52.874Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "6",
+        "object_repr": "Purchase 6 from Order 16",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-03-29T16:23:52.876Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "5",
+        "object_repr": "Purchase 5 from Order 16",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-03-29T16:23:52.877Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "Purchase 4 from Order 16",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-04-07T17:41:20.531Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "Gerência",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-04-07T17:41:32.915Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-04-07T17:42:06.887Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "gerencia",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-04-07T17:48:36.367Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "saler",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2024-04-07T17:48:57.009Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "3",
+        "object_repr": "regular_saler",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-04-07T17:49:34.389Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "vendedor-emerson",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2024-04-07T17:49:45.722Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "vendedor-emerson",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2024-04-13T17:26:31.395Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "vendedor-emerson",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2024-04-13T17:31:57.829Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "3",
+        "object_repr": "regular_saler",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2024-04-13T17:51:28.018Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "4",
+        "object_repr": "Financeiro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2024-04-13T17:51:57.874Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "financeiro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2024-04-13T17:52:04.369Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "financeiro",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2024-04-13T21:15:59.961Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "vendedor-emerson",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2024-04-14T17:27:11.814Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "4",
+        "object_repr": "financial",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2024-04-14T17:27:17.048Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "managers",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2024-04-14T17:28:05.354Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "5",
+        "object_repr": "admin",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add Token",
+        "content_type": 7,
+        "codename": "add_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change Token",
+        "content_type": 7,
+        "codename": "change_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": 7,
+        "codename": "delete_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view Token",
+        "content_type": 7,
+        "codename": "view_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add token",
+        "content_type": 8,
+        "codename": "add_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change token",
+        "content_type": 8,
+        "codename": "change_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete token",
+        "content_type": 8,
+        "codename": "delete_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view token",
+        "content_type": 8,
+        "codename": "view_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add stock",
+        "content_type": 9,
+        "codename": "add_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change stock",
+        "content_type": 9,
+        "codename": "change_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete stock",
+        "content_type": 9,
+        "codename": "delete_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view stock",
+        "content_type": 9,
+        "codename": "view_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add product",
+        "content_type": 10,
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change product",
+        "content_type": 10,
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete product",
+        "content_type": 10,
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view product",
+        "content_type": 10,
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add order",
+        "content_type": 11,
+        "codename": "add_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change order",
+        "content_type": 11,
+        "codename": "change_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete order",
+        "content_type": 11,
+        "codename": "delete_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view order",
+        "content_type": 11,
+        "codename": "view_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add product order",
+        "content_type": 12,
+        "codename": "add_productorder"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change product order",
+        "content_type": 12,
+        "codename": "change_productorder"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete product order",
+        "content_type": 12,
+        "codename": "delete_productorder"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view product order",
+        "content_type": 12,
+        "codename": "view_productorder"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add customer",
+        "content_type": 13,
+        "codename": "add_customer"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change customer",
+        "content_type": 13,
+        "codename": "change_customer"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete customer",
+        "content_type": 13,
+        "codename": "delete_customer"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view customer",
+        "content_type": 13,
+        "codename": "view_customer"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add purchase",
+        "content_type": 14,
+        "codename": "add_purchase"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change purchase",
+        "content_type": 14,
+        "codename": "change_purchase"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete purchase",
+        "content_type": 14,
+        "codename": "delete_purchase"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view purchase",
+        "content_type": 14,
+        "codename": "view_purchase"
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "managers",
+        "permissions": [
+            49,
+            50,
+            51,
+            52,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            37,
+            38,
+            39,
+            40,
+            53,
+            54,
+            55,
+            56
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "saler",
+        "permissions": [
+            41,
+            44,
+            45,
+            48,
+            40,
+            53,
+            56,
+            36
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+        "name": "regular_saler",
+        "permissions": [
+            49,
+            41,
+            44,
+            45,
+            48,
+            40,
+            53,
+            56,
+            36
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 4,
+    "fields": {
+        "name": "financial",
+        "permissions": [
+            38,
+            34
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 5,
+    "fields": {
+        "name": "admin",
+        "permissions": [
+            49,
+            50,
+            51,
+            52,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            37,
+            38,
+            39,
+            40,
+            53,
+            54,
+            55,
+            56,
+            33,
+            34,
+            35,
+            36
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$tJDu3rZOsbmJZs0PynnxiV$14tPsQLT+Jn5phMbsPm1L2b4vyV0+90mrnu4a70cBNU=",
+        "last_login": "2024-04-13T17:25:30.715Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "contatolucasthomas@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-12-20T12:30:41Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$v7EThxMHkSL32VjrEOdCs4$wY/bepzp9JBW0ujGDj935I5Spg+ECes0qDXeSRx0mL0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "vendedor-emerson",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-04-07T17:49:34Z",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$a1aLe9SDPFcv3cXiGLTUTK$fp9x5/4HewmW4wqJWbsZ/Qcz9mxyI9u1V9rAtFmaQY0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "financeiro",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-04-13T17:51:57Z",
+        "groups": [
+            4
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "token"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "authtoken",
+        "model": "tokenproxy"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "stock",
+        "model": "stock"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "product",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "order",
+        "model": "order"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "order",
+        "model": "productorder"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "customer",
+        "model": "customer"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "purchase",
+        "model": "purchase"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "7vc2y9myvvfnazlsjkhfhr2zsdc2we5z",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWla6NDWpXvO0ExnBosaSCisjHcXEha6fe_9_1YJt7WkrcqSRlZXZdXll2Wkp0yH4AdO91nTPK3LmPWR6NNW3c8sr9vZ_h0UrGVfQ0ed867jhiQTcdyBpRCNHwYv3rkgBkNrPVtghAAE2JroQRpnMwzq8wXloDe2:1rFvjm:v8_TAyodo8BP6hhWNo-xAqN7eBWbX4jieDqDGmXVZPc",
+        "expire_date": "2024-01-03T12:31:46.774Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9wr6947hh04cc6d4ojcy4i9zp962w8f0",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWla6NDWpXvO0ExnBosaSCisjHcXEha6fe_9_1YJt7WkrcqSRlZXZdXll2Wkp0yH4AdO91nTPK3LmPWR6NNW3c8sr9vZ_h0UrGVfQ0ed867jhiQTcdyBpRCNHwYv3rkgBkNrPVtghAAE2JroQRpnMwzq8wXloDe2:1rtSl3:LWp5dHUMgZtdwZju0WroBl0V8UwUMuJ3pKUTXcnIZ58",
+        "expire_date": "2024-04-21T13:40:29.656Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "a86w7nro7lh537inr9ae9nk41az7j6u6",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWla6NDWpXvO0ExnBosaSCisjHcXEha6fe_9_1YJt7WkrcqSRlZXZdXll2Wkp0yH4AdO91nTPK3LmPWR6NNW3c8sr9vZ_h0UrGVfQ0ed867jhiQTcdyBpRCNHwYv3rkgBkNrPVtghAAE2JroQRpnMwzq8wXloDe2:1ro9ER:QdepdKKwokDM4gyrT9Wy0mIbQTwhd6DlUGbSSrl_y7w",
+        "expire_date": "2024-04-06T21:48:51.299Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ceabi1doa2o7gdswlqjgwxrjsdcesizz",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWla6NDWpXvO0ExnBosaSCisjHcXEha6fe_9_1YJt7WkrcqSRlZXZdXll2Wkp0yH4AdO91nTPK3LmPWR6NNW3c8sr9vZ_h0UrGVfQ0ed867jhiQTcdyBpRCNHwYv3rkgBkNrPVtghAAE2JroQRpnMwzq8wXloDe2:1ro0Br:2OX71Tqsei4UpE4EupLs6Z2p7TqETC6R2IIkC2XVJEY",
+        "expire_date": "2024-04-06T12:09:35.952Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ds5fpunbvoiff9755sjm4kg925ej17ru",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWla6NDWpXvO0ExnBosaSCisjHcXEha6fe_9_1YJt7WkrcqSRlZXZdXll2Wkp0yH4AdO91nTPK3LmPWR6NNW3c8sr9vZ_h0UrGVfQ0ed867jhiQTcdyBpRCNHwYv3rkgBkNrPVtghAAE2JroQRpnMwzq8wXloDe2:1rvh86:wyvMVXPLfzFvSTJvdaZkYbG4ZvP5KZnBHyj9iQFrJ14",
+        "expire_date": "2024-04-27T17:25:30.721Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mhrme0yv5aqeua38zprvfayp26x7qtp4",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWla6NDWpXvO0ExnBosaSCisjHcXEha6fe_9_1YJt7WkrcqSRlZXZdXll2Wkp0yH4AdO91nTPK3LmPWR6NNW3c8sr9vZ_h0UrGVfQ0ed867jhiQTcdyBpRCNHwYv3rkgBkNrPVtghAAE2JroQRpnMwzq8wXloDe2:1rr26m:1sSCWjio1nBeQPFMapNxEDDbwLKn1HkuqFE1tXymLtw",
+        "expire_date": "2024-04-14T20:48:52.806Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "092111362f8a6dc14379d4a1ff4ef0ba5ccfdbdd",
+    "fields": {
+        "user": 3,
+        "created": "2024-04-13T17:53:46.758Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "0e992b40bc40765d847ea27632bcee4e04a3e425",
+    "fields": {
+        "user": 2,
+        "created": "2024-04-07T17:50:10.741Z"
+    }
+},
+{
+    "model": "authtoken.token",
+    "pk": "c654feb182474539d916cf8ac24f93a94918b31f",
+    "fields": {
+        "user": 1,
+        "created": "2023-12-20T12:36:20.980Z"
+    }
+},
+{
+    "model": "stock.stock",
+    "pk": 3,
+    "fields": {
+        "product": 1,
+        "quantity": 1,
+        "status": true,
+        "created_at": "2023-12-22T23:24:47.820Z",
+        "updated_at": "2024-04-13T21:14:36.374Z",
+        "active": true
+    }
+},
+{
+    "model": "stock.stock",
+    "pk": 4,
+    "fields": {
+        "product": 2,
+        "quantity": 10,
+        "status": true,
+        "created_at": "2023-12-22T23:25:02.269Z",
+        "updated_at": "2023-12-22T23:25:02.269Z",
+        "active": true
+    }
+},
+{
+    "model": "stock.stock",
+    "pk": 5,
+    "fields": {
+        "product": 3,
+        "quantity": 5,
+        "status": true,
+        "created_at": "2023-12-22T23:25:06.676Z",
+        "updated_at": "2024-04-06T22:34:30.281Z",
+        "active": true
+    }
+},
+{
+    "model": "stock.stock",
+    "pk": 6,
+    "fields": {
+        "product": 4,
+        "quantity": 10,
+        "status": true,
+        "created_at": "2023-12-22T23:25:11.628Z",
+        "updated_at": "2023-12-22T23:25:11.628Z",
+        "active": true
+    }
+},
+{
+    "model": "stock.stock",
+    "pk": 7,
+    "fields": {
+        "product": 5,
+        "quantity": -1,
+        "status": true,
+        "created_at": "2023-12-22T23:25:16.325Z",
+        "updated_at": "2024-04-13T21:14:36.367Z",
+        "active": true
+    }
+},
+{
+    "model": "stock.stock",
+    "pk": 8,
+    "fields": {
+        "product": 6,
+        "quantity": 2,
+        "status": true,
+        "created_at": "2023-12-22T23:25:21.475Z",
+        "updated_at": "2024-04-13T00:11:09.054Z",
+        "active": true
+    }
+},
+{
+    "model": "stock.stock",
+    "pk": 9,
+    "fields": {
+        "product": 12,
+        "quantity": 390,
+        "status": true,
+        "created_at": "2024-04-07T01:10:35.302Z",
+        "updated_at": "2024-04-13T20:34:19.003Z",
+        "active": true
+    }
+},
+{
+    "model": "stock.stock",
+    "pk": 10,
+    "fields": {
+        "product": 13,
+        "quantity": 85,
+        "status": true,
+        "created_at": "2024-04-07T13:40:16.331Z",
+        "updated_at": "2024-04-13T20:34:18.994Z",
+        "active": true
+    }
+},
+{
+    "model": "stock.stock",
+    "pk": 11,
+    "fields": {
+        "product": 11,
+        "quantity": 2,
+        "status": true,
+        "created_at": "2024-04-12T22:08:32.584Z",
+        "updated_at": "2024-04-12T22:08:32.584Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 1,
+    "fields": {
+        "name": "Essência 0",
+        "description": "Description for Essência 0",
+        "price_sale": "3.95",
+        "price_purchase": "16.30",
+        "created_at": "2023-12-20T12:31:39.306Z",
+        "updated_at": "2023-12-20T12:31:39.306Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 2,
+    "fields": {
+        "name": "Essência 1",
+        "description": "Description for Essência 1",
+        "price_sale": "11.18",
+        "price_purchase": "14.15",
+        "created_at": "2023-12-20T12:31:39.309Z",
+        "updated_at": "2023-12-20T12:31:39.309Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 3,
+    "fields": {
+        "name": "Aroma 2",
+        "description": "Description for Aroma 2",
+        "price_sale": "1.88",
+        "price_purchase": "13.19",
+        "created_at": "2023-12-20T12:31:39.310Z",
+        "updated_at": "2023-12-20T12:31:39.310Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 4,
+    "fields": {
+        "name": "Aroma 3",
+        "description": "Description for Aroma 3",
+        "price_sale": "11.94",
+        "price_purchase": "13.58",
+        "created_at": "2023-12-20T12:31:39.312Z",
+        "updated_at": "2023-12-20T12:31:39.312Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 5,
+    "fields": {
+        "name": "Perfume 4",
+        "description": "Description for Perfume 4",
+        "price_sale": "1.90",
+        "price_purchase": "5.18",
+        "created_at": "2023-12-20T12:31:39.314Z",
+        "updated_at": "2023-12-20T12:31:39.314Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 6,
+    "fields": {
+        "name": "Óleo de amora",
+        "description": "Loren ipsum bla bla bla",
+        "price_sale": "15.00",
+        "price_purchase": "10.00",
+        "created_at": "2023-12-20T13:53:42.061Z",
+        "updated_at": "2024-04-07T13:37:12.326Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 7,
+    "fields": {
+        "name": "Óleo de amora",
+        "description": "Loren ipsum bla bla bla",
+        "price_sale": "15.00",
+        "price_purchase": "10.00",
+        "created_at": "2024-04-07T01:06:44.884Z",
+        "updated_at": "2024-04-07T01:06:44.884Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 8,
+    "fields": {
+        "name": "Óleo de amora",
+        "description": "Loren ipsum bla bla bla",
+        "price_sale": "15.00",
+        "price_purchase": "10.00",
+        "created_at": "2024-04-07T01:07:03.317Z",
+        "updated_at": "2024-04-07T01:07:03.317Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 9,
+    "fields": {
+        "name": "Óleo de amora",
+        "description": "Loren ipsum bla bla bla",
+        "price_sale": "15.00",
+        "price_purchase": "10.00",
+        "created_at": "2024-04-07T01:08:04.630Z",
+        "updated_at": "2024-04-07T01:08:04.630Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 10,
+    "fields": {
+        "name": "Óleo de pitanga",
+        "description": "Loren ipsum bla bla bla",
+        "price_sale": "15.00",
+        "price_purchase": "10.00",
+        "created_at": "2024-04-07T01:08:33.234Z",
+        "updated_at": "2024-04-07T01:08:33.235Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 11,
+    "fields": {
+        "name": "Óleo de laranja",
+        "description": "Loren ipsum bla bla bla",
+        "price_sale": "15.00",
+        "price_purchase": "10.00",
+        "created_at": "2024-04-07T01:09:08.721Z",
+        "updated_at": "2024-04-07T01:09:08.721Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 12,
+    "fields": {
+        "name": "Óleo de jaca",
+        "description": "Loren ipsum bla bla bla",
+        "price_sale": "15.00",
+        "price_purchase": "10.00",
+        "created_at": "2024-04-07T01:10:30.878Z",
+        "updated_at": "2024-04-07T01:10:30.878Z",
+        "active": true
+    }
+},
+{
+    "model": "product.product",
+    "pk": 13,
+    "fields": {
+        "name": "Óleo de jaca",
+        "description": "Loren ipsum bla bla bla",
+        "price_sale": "20.00",
+        "price_purchase": "10.00",
+        "created_at": "2024-04-07T01:10:38.292Z",
+        "updated_at": "2024-04-07T13:52:13.888Z",
+        "active": true
+    }
+},
+{
+    "model": "order.order",
+    "pk": 14,
+    "fields": {
+        "customer": null,
+        "created_at": "2024-03-23T20:05:28.929Z",
+        "updated_at": "2024-03-23T20:05:34.829Z",
+        "owner": 1,
+        "total_price": "18.94",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 15,
+    "fields": {
+        "customer": 1,
+        "created_at": "2024-03-23T21:04:02.055Z",
+        "updated_at": "2024-03-23T21:04:02.113Z",
+        "owner": 1,
+        "total_price": "17.02",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 16,
+    "fields": {
+        "customer": null,
+        "created_at": "2024-03-23T21:48:01.321Z",
+        "updated_at": "2024-03-23T21:48:01.380Z",
+        "owner": 1,
+        "total_price": "110.82",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 17,
+    "fields": {
+        "customer": 1,
+        "created_at": "2024-03-29T16:31:04.317Z",
+        "updated_at": "2024-03-29T16:31:04.373Z",
+        "owner": 1,
+        "total_price": "193.64",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 18,
+    "fields": {
+        "customer": 1,
+        "created_at": "2024-03-29T16:34:04.474Z",
+        "updated_at": "2024-03-29T16:34:04.529Z",
+        "owner": 1,
+        "total_price": "239.50",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 19,
+    "fields": {
+        "customer": 1,
+        "created_at": "2024-03-29T21:59:54.681Z",
+        "updated_at": "2024-03-29T21:59:54.714Z",
+        "owner": 1,
+        "total_price": "138.40",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 20,
+    "fields": {
+        "customer": 1,
+        "created_at": "2024-03-31T20:47:20.450Z",
+        "updated_at": "2024-03-31T20:47:20.507Z",
+        "owner": 1,
+        "total_price": "71.04",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 21,
+    "fields": {
+        "customer": 1,
+        "created_at": "2024-04-06T14:52:04.402Z",
+        "updated_at": "2024-04-06T14:52:04.477Z",
+        "owner": 1,
+        "total_price": "17.30",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 22,
+    "fields": {
+        "customer": 1,
+        "created_at": "2024-04-07T14:06:45.188Z",
+        "updated_at": "2024-04-07T14:06:45.221Z",
+        "owner": 1,
+        "total_price": "1575.00",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 23,
+    "fields": {
+        "customer": 1,
+        "created_at": "2024-04-07T14:09:33.833Z",
+        "updated_at": "2024-04-07T14:09:33.883Z",
+        "owner": 1,
+        "total_price": "1590.80",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 24,
+    "fields": {
+        "customer": 3,
+        "created_at": "2024-04-11T20:04:12.680Z",
+        "updated_at": "2024-04-11T20:04:12.737Z",
+        "owner": 1,
+        "total_price": "200.00",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 25,
+    "fields": {
+        "customer": 5,
+        "created_at": "2024-04-11T20:25:49.952Z",
+        "updated_at": "2024-04-11T20:25:49.980Z",
+        "owner": 1,
+        "total_price": "63.80",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 26,
+    "fields": {
+        "customer": 3,
+        "created_at": "2024-04-12T22:07:41.996Z",
+        "updated_at": "2024-04-12T22:07:42.031Z",
+        "owner": 1,
+        "total_price": "30.00",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 27,
+    "fields": {
+        "customer": 5,
+        "created_at": "2024-04-12T23:38:33.367Z",
+        "updated_at": "2024-04-12T23:38:33.413Z",
+        "owner": 1,
+        "total_price": "45.00",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 28,
+    "fields": {
+        "customer": 3,
+        "created_at": "2024-04-13T00:09:50.702Z",
+        "updated_at": "2024-04-13T00:09:50.723Z",
+        "owner": 1,
+        "total_price": "45.00",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 29,
+    "fields": {
+        "customer": 4,
+        "created_at": "2024-04-13T17:48:20.764Z",
+        "updated_at": "2024-04-13T17:48:20.795Z",
+        "owner": 1,
+        "total_price": "43.80",
+        "discount": null
+    }
+},
+{
+    "model": "order.order",
+    "pk": 30,
+    "fields": {
+        "customer": 3,
+        "created_at": "2024-04-13T20:31:02.506Z",
+        "updated_at": "2024-04-13T20:32:06.220Z",
+        "owner": 2,
+        "total_price": "189.00",
+        "discount": 10.0
+    }
+},
+{
+    "model": "order.order",
+    "pk": 31,
+    "fields": {
+        "customer": 5,
+        "created_at": "2024-04-13T21:13:37.130Z",
+        "updated_at": "2024-04-13T21:13:39.935Z",
+        "owner": 2,
+        "total_price": "28.95",
+        "discount": 0.0
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 21,
+    "fields": {
+        "product": 3,
+        "order": 14,
+        "quantity": 3
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 22,
+    "fields": {
+        "product": 5,
+        "order": 14,
+        "quantity": 7
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 23,
+    "fields": {
+        "product": 3,
+        "order": 15,
+        "quantity": 4
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 24,
+    "fields": {
+        "product": 5,
+        "order": 15,
+        "quantity": 5
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 25,
+    "fields": {
+        "product": 4,
+        "order": 16,
+        "quantity": 3
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 26,
+    "fields": {
+        "product": 6,
+        "order": 16,
+        "quantity": 5
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 27,
+    "fields": {
+        "product": 3,
+        "order": 17,
+        "quantity": 3
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 28,
+    "fields": {
+        "product": 5,
+        "order": 17,
+        "quantity": 10
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 29,
+    "fields": {
+        "product": 2,
+        "order": 17,
+        "quantity": 2
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 30,
+    "fields": {
+        "product": 6,
+        "order": 17,
+        "quantity": 5
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 31,
+    "fields": {
+        "product": 4,
+        "order": 17,
+        "quantity": 6
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 32,
+    "fields": {
+        "product": 1,
+        "order": 18,
+        "quantity": 10
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 33,
+    "fields": {
+        "product": 2,
+        "order": 18,
+        "quantity": 2
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 34,
+    "fields": {
+        "product": 3,
+        "order": 18,
+        "quantity": 2
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 35,
+    "fields": {
+        "product": 4,
+        "order": 18,
+        "quantity": 2
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 36,
+    "fields": {
+        "product": 6,
+        "order": 18,
+        "quantity": 10
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 37,
+    "fields": {
+        "product": 4,
+        "order": 19,
+        "quantity": 10
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 38,
+    "fields": {
+        "product": 5,
+        "order": 19,
+        "quantity": 10
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 39,
+    "fields": {
+        "product": 3,
+        "order": 20,
+        "quantity": 3
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 40,
+    "fields": {
+        "product": 5,
+        "order": 20,
+        "quantity": 5
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 41,
+    "fields": {
+        "product": 2,
+        "order": 20,
+        "quantity": 5
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 42,
+    "fields": {
+        "product": 1,
+        "order": 21,
+        "quantity": 2
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 43,
+    "fields": {
+        "product": 3,
+        "order": 21,
+        "quantity": 5
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 44,
+    "fields": {
+        "product": 6,
+        "order": 22,
+        "quantity": 5
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 45,
+    "fields": {
+        "product": 12,
+        "order": 22,
+        "quantity": 100
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 46,
+    "fields": {
+        "product": 12,
+        "order": 23,
+        "quantity": 100
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 47,
+    "fields": {
+        "product": 6,
+        "order": 23,
+        "quantity": 5
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 48,
+    "fields": {
+        "product": 1,
+        "order": 23,
+        "quantity": 4
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 49,
+    "fields": {
+        "product": 13,
+        "order": 24,
+        "quantity": 10
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 50,
+    "fields": {
+        "product": 11,
+        "order": 25,
+        "quantity": 4
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 51,
+    "fields": {
+        "product": 5,
+        "order": 25,
+        "quantity": 2
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 52,
+    "fields": {
+        "product": 11,
+        "order": 26,
+        "quantity": 2
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 53,
+    "fields": {
+        "product": 11,
+        "order": 27,
+        "quantity": 3
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 54,
+    "fields": {
+        "product": 6,
+        "order": 28,
+        "quantity": 3
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 55,
+    "fields": {
+        "product": 13,
+        "order": 29,
+        "quantity": 2
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 56,
+    "fields": {
+        "product": 5,
+        "order": 29,
+        "quantity": 2
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 57,
+    "fields": {
+        "product": 13,
+        "order": 30,
+        "quantity": 3
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 58,
+    "fields": {
+        "product": 12,
+        "order": 30,
+        "quantity": 10
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 59,
+    "fields": {
+        "product": 5,
+        "order": 31,
+        "quantity": 9
+    }
+},
+{
+    "model": "order.productorder",
+    "pk": 60,
+    "fields": {
+        "product": 1,
+        "order": 31,
+        "quantity": 3
+    }
+},
+{
+    "model": "customer.customer",
+    "pk": 1,
+    "fields": {
+        "first_name": "Lucas",
+        "last_name": "Thomas",
+        "email": "contatolucasthomas@gmail.com",
+        "phone": "7599566523165",
+        "address": "Rua bararadasd a asa",
+        "cpf": "05385051500",
+        "rg": "13458888555",
+        "created_at": "2024-03-23T16:55:29.280Z",
+        "updated_at": "2024-04-14T16:38:42.037Z"
+    }
+},
+{
+    "model": "customer.customer",
+    "pk": 2,
+    "fields": {
+        "first_name": "Mestre",
+        "last_name": "Bira",
+        "email": "mestre@bira.com",
+        "phone": "7599265489",
+        "address": "Rua do Mestre Bira",
+        "cpf": "05385051512",
+        "rg": "12345678952",
+        "created_at": "2024-04-06T18:52:33.590Z",
+        "updated_at": "2024-04-06T18:52:33.590Z"
+    }
+},
+{
+    "model": "customer.customer",
+    "pk": 3,
+    "fields": {
+        "first_name": "Marly",
+        "last_name": "Gomes",
+        "email": "marly@gomes.com",
+        "phone": "75889966522",
+        "address": "Rua da Marly",
+        "cpf": "05385051507",
+        "rg": "124578856659",
+        "created_at": "2024-04-06T18:54:12.507Z",
+        "updated_at": "2024-04-06T18:54:12.507Z"
+    }
+},
+{
+    "model": "customer.customer",
+    "pk": 4,
+    "fields": {
+        "first_name": "Suelen",
+        "last_name": "Costa",
+        "email": "suelen@costa.com",
+        "phone": "75991264782",
+        "address": "Rua Bom Jesus",
+        "cpf": "45285658744",
+        "rg": "12345687845",
+        "created_at": "2024-04-06T18:56:10.079Z",
+        "updated_at": "2024-04-06T18:56:10.079Z"
+    }
+},
+{
+    "model": "customer.customer",
+    "pk": 5,
+    "fields": {
+        "first_name": "João",
+        "last_name": "Vitor",
+        "email": "joao@vitor.com",
+        "phone": "75995456464",
+        "address": "joao@vitor.com",
+        "cpf": "85296374188",
+        "rg": "8529637445",
+        "created_at": "2024-04-06T18:58:52.238Z",
+        "updated_at": "2024-04-14T18:26:49.565Z"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 9,
+    "fields": {
+        "customer_info": {},
+        "product_info": "[{\"id\": 4, \"name\": \"Aroma 3\", \"description\": \"Description for Aroma 3\", \"price_sale\": \"11.94\", \"price_purchase\": \"13.58\", \"quantity\": 3, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}, {\"id\": 6, \"name\": \"\\u00d3leo de amora\", \"description\": \"Loren ipsum bla bla bla\", \"price_sale\": \"15.00\", \"price_purchase\": \"10.00\", \"quantity\": 5, \"created_at\": \"2023-12-20 13:53:42\", \"updated_at\": \"2023-12-20 13:53:42\", \"active\": true}]",
+        "origin_order": 16,
+        "created_at": "2024-03-29T16:23:59.823Z",
+        "updated_at": "2024-03-29T16:23:59.823Z",
+        "owner": 1,
+        "total_price": "110.82"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 10,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Emerson\", \"last_name\": \"Santos\", \"email\": \"emerson@santos.com\", \"phone\": \"7599566523165\", \"address\": \"Rua bararadasd a asa\", \"created_at\": \"2024-03-23 16:55:29\", \"updated_at\": \"2024-03-23 17:12:05\", \"id\": 1}",
+        "product_info": "[{\"id\": 3, \"name\": \"Aroma 2\", \"description\": \"Description for Aroma 2\", \"price_sale\": \"1.88\", \"price_purchase\": \"13.19\", \"quantity\": 4, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}, {\"id\": 5, \"name\": \"Perfume 4\", \"description\": \"Description for Perfume 4\", \"price_sale\": \"1.90\", \"price_purchase\": \"5.18\", \"quantity\": 5, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}]",
+        "origin_order": 15,
+        "created_at": "2024-03-29T16:28:35.550Z",
+        "updated_at": "2024-03-29T16:28:35.550Z",
+        "owner": 1,
+        "total_price": "17.02"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 11,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Emerson\", \"last_name\": \"Santos\", \"email\": \"emerson@santos.com\", \"phone\": \"7599566523165\", \"address\": \"Rua bararadasd a asa\", \"created_at\": \"2024-03-23 16:55:29\", \"updated_at\": \"2024-03-23 17:12:05\", \"id\": 1}",
+        "product_info": "[{\"id\": 1, \"name\": \"Ess\\u00eancia 0\", \"description\": \"Description for Ess\\u00eancia 0\", \"price_sale\": \"3.95\", \"price_purchase\": \"16.30\", \"quantity\": 10, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}, {\"id\": 2, \"name\": \"Ess\\u00eancia 1\", \"description\": \"Description for Ess\\u00eancia 1\", \"price_sale\": \"11.18\", \"price_purchase\": \"14.15\", \"quantity\": 2, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}, {\"id\": 3, \"name\": \"Aroma 2\", \"description\": \"Description for Aroma 2\", \"price_sale\": \"1.88\", \"price_purchase\": \"13.19\", \"quantity\": 2, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}, {\"id\": 4, \"name\": \"Aroma 3\", \"description\": \"Description for Aroma 3\", \"price_sale\": \"11.94\", \"price_purchase\": \"13.58\", \"quantity\": 2, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}, {\"id\": 6, \"name\": \"\\u00d3leo de amora\", \"description\": \"Loren ipsum bla bla bla\", \"price_sale\": \"15.00\", \"price_purchase\": \"10.00\", \"quantity\": 10, \"created_at\": \"2023-12-20 13:53:42\", \"updated_at\": \"2023-12-20 13:53:42\", \"active\": true}]",
+        "origin_order": 18,
+        "created_at": "2024-03-29T16:34:11.014Z",
+        "updated_at": "2024-03-29T16:34:11.014Z",
+        "owner": 1,
+        "total_price": "239.50"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 12,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Emerson\", \"last_name\": \"Santos\", \"email\": \"emerson@santos.com\", \"phone\": \"7599566523165\", \"address\": \"Rua bararadasd a asa\", \"created_at\": \"2024-03-23 16:55:29\", \"updated_at\": \"2024-03-23 17:12:05\", \"id\": 1}",
+        "product_info": "[{\"id\": 4, \"name\": \"Aroma 3\", \"description\": \"Description for Aroma 3\", \"price_sale\": \"11.94\", \"price_purchase\": \"13.58\", \"quantity\": 10, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}, {\"id\": 5, \"name\": \"Perfume 4\", \"description\": \"Description for Perfume 4\", \"price_sale\": \"1.90\", \"price_purchase\": \"5.18\", \"quantity\": 10, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}]",
+        "origin_order": 19,
+        "created_at": "2024-03-29T22:00:21.993Z",
+        "updated_at": "2024-03-29T22:00:21.993Z",
+        "owner": 1,
+        "total_price": "138.40"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 13,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Emerson\", \"last_name\": \"Santos\", \"email\": \"emerson@santos.com\", \"phone\": \"7599566523165\", \"address\": \"Rua bararadasd a asa\", \"created_at\": \"2024-03-23 16:55:29\", \"updated_at\": \"2024-03-23 17:12:05\", \"id\": 1}",
+        "product_info": "[{\"id\": 3, \"name\": \"Aroma 2\", \"description\": \"Description for Aroma 2\", \"price_sale\": \"1.88\", \"price_purchase\": \"13.19\", \"quantity\": 3, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}, {\"id\": 5, \"name\": \"Perfume 4\", \"description\": \"Description for Perfume 4\", \"price_sale\": \"1.90\", \"price_purchase\": \"5.18\", \"quantity\": 5, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}, {\"id\": 2, \"name\": \"Ess\\u00eancia 1\", \"description\": \"Description for Ess\\u00eancia 1\", \"price_sale\": \"11.18\", \"price_purchase\": \"14.15\", \"quantity\": 5, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}]",
+        "origin_order": 20,
+        "created_at": "2024-03-31T20:47:47.252Z",
+        "updated_at": "2024-03-31T20:47:47.252Z",
+        "owner": 1,
+        "total_price": "71.04"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 14,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Emerson\", \"last_name\": \"Santos\", \"email\": \"emerson@santos.com\", \"phone\": \"7599566523165\", \"address\": \"Rua bararadasd a asa\", \"created_at\": \"2024-03-23 16:55:29\", \"updated_at\": \"2024-04-06 19:42:03\", \"id\": 1}",
+        "product_info": "[{\"id\": 1, \"name\": \"Ess\\u00eancia 0\", \"description\": \"Description for Ess\\u00eancia 0\", \"price_sale\": \"3.95\", \"price_purchase\": \"16.30\", \"quantity\": 2, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}, {\"id\": 3, \"name\": \"Aroma 2\", \"description\": \"Description for Aroma 2\", \"price_sale\": \"1.88\", \"price_purchase\": \"13.19\", \"quantity\": 5, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}]",
+        "origin_order": 21,
+        "created_at": "2024-04-06T22:34:30.292Z",
+        "updated_at": "2024-04-06T22:34:30.292Z",
+        "owner": 1,
+        "total_price": "17.30"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 15,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Emerson\", \"last_name\": \"Santos\", \"email\": \"emerson@santos.com\", \"phone\": \"7599566523165\", \"address\": \"Rua bararadasd a asa\", \"created_at\": \"2024-03-23 16:55:29\", \"updated_at\": \"2024-04-06 19:42:03\", \"id\": 1}",
+        "product_info": "[{\"id\": 12, \"name\": \"\\u00d3leo de jaca\", \"description\": \"Loren ipsum bla bla bla\", \"price_sale\": \"15.00\", \"price_purchase\": \"10.00\", \"quantity\": 100, \"created_at\": \"2024-04-07 01:10:30\", \"updated_at\": \"2024-04-07 01:10:30\", \"active\": true}, {\"id\": 6, \"name\": \"\\u00d3leo de amora\", \"description\": \"Loren ipsum bla bla bla\", \"price_sale\": \"15.00\", \"price_purchase\": \"10.00\", \"quantity\": 5, \"created_at\": \"2023-12-20 13:53:42\", \"updated_at\": \"2024-04-07 13:37:12\", \"active\": true}, {\"id\": 1, \"name\": \"Ess\\u00eancia 0\", \"description\": \"Description for Ess\\u00eancia 0\", \"price_sale\": \"3.95\", \"price_purchase\": \"16.30\", \"quantity\": 4, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}]",
+        "origin_order": 23,
+        "created_at": "2024-04-07T14:10:29.417Z",
+        "updated_at": "2024-04-07T14:10:29.417Z",
+        "owner": 1,
+        "total_price": "1590.80"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 16,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Marly\", \"last_name\": \"Gomes\", \"email\": \"marly@gomes.com\", \"phone\": \"75889966522\", \"address\": \"Rua da Marly\", \"created_at\": \"2024-04-06 18:54:12\", \"updated_at\": \"2024-04-06 18:54:12\", \"id\": 3}",
+        "product_info": "[{\"id\": 13, \"name\": \"\\u00d3leo de jaca\", \"description\": \"Loren ipsum bla bla bla\", \"price_sale\": \"20.00\", \"price_purchase\": \"10.00\", \"quantity\": 10, \"created_at\": \"2024-04-07 01:10:38\", \"updated_at\": \"2024-04-07 13:52:13\", \"active\": true}]",
+        "origin_order": 24,
+        "created_at": "2024-04-11T20:14:03.753Z",
+        "updated_at": "2024-04-11T20:14:03.753Z",
+        "owner": 1,
+        "total_price": "200.00"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 17,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Marly\", \"last_name\": \"Gomes\", \"email\": \"marly@gomes.com\", \"phone\": \"75889966522\", \"address\": \"Rua da Marly\", \"created_at\": \"2024-04-06 18:54:12\", \"updated_at\": \"2024-04-06 18:54:12\", \"id\": 3}",
+        "product_info": "[{\"id\": 11, \"name\": \"\\u00d3leo de laranja\", \"description\": \"Loren ipsum bla bla bla\", \"price_sale\": \"15.00\", \"price_purchase\": \"10.00\", \"quantity\": 2, \"created_at\": \"2024-04-07 01:09:08\", \"updated_at\": \"2024-04-07 01:09:08\", \"active\": true}]",
+        "origin_order": 26,
+        "created_at": "2024-04-12T22:08:32.597Z",
+        "updated_at": "2024-04-12T22:08:32.597Z",
+        "owner": 1,
+        "total_price": "30.00"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 18,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Marly\", \"last_name\": \"Gomes\", \"email\": \"marly@gomes.com\", \"phone\": \"75889966522\", \"address\": \"Rua da Marly\", \"created_at\": \"2024-04-06 18:54:12\", \"updated_at\": \"2024-04-06 18:54:12\", \"id\": 3}",
+        "product_info": "[{\"id\": 6, \"name\": \"\\u00d3leo de amora\", \"description\": \"Loren ipsum bla bla bla\", \"price_sale\": \"15.00\", \"price_purchase\": \"10.00\", \"quantity\": 3, \"created_at\": \"2023-12-20 13:53:42\", \"updated_at\": \"2024-04-07 13:37:12\", \"active\": true}]",
+        "origin_order": 28,
+        "created_at": "2024-04-13T00:11:09.069Z",
+        "updated_at": "2024-04-13T00:11:09.069Z",
+        "owner": 1,
+        "total_price": "45.00"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 19,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Suelen\", \"last_name\": \"Costa\", \"email\": \"suelen@costa.com\", \"phone\": \"75991264782\", \"address\": \"Rua Bom Jesus\", \"created_at\": \"2024-04-06 18:56:10\", \"updated_at\": \"2024-04-06 18:56:10\", \"id\": 4}",
+        "product_info": "[{\"id\": 13, \"name\": \"\\u00d3leo de jaca\", \"description\": \"Loren ipsum bla bla bla\", \"price_sale\": \"20.00\", \"price_purchase\": \"10.00\", \"quantity\": 2, \"created_at\": \"2024-04-07 01:10:38\", \"updated_at\": \"2024-04-07 13:52:13\", \"active\": true}, {\"id\": 5, \"name\": \"Perfume 4\", \"description\": \"Description for Perfume 4\", \"price_sale\": \"1.90\", \"price_purchase\": \"5.18\", \"quantity\": 2, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}]",
+        "origin_order": 29,
+        "created_at": "2024-04-13T17:48:33.803Z",
+        "updated_at": "2024-04-13T17:48:33.803Z",
+        "owner": 1,
+        "total_price": "43.80"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 20,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Marly\", \"last_name\": \"Gomes\", \"email\": \"marly@gomes.com\", \"phone\": \"75889966522\", \"address\": \"Rua da Marly\", \"created_at\": \"2024-04-06 18:54:12\", \"updated_at\": \"2024-04-06 18:54:12\", \"id\": 3}",
+        "product_info": "[{\"id\": 13, \"name\": \"\\u00d3leo de jaca\", \"description\": \"Loren ipsum bla bla bla\", \"price_sale\": \"20.00\", \"price_purchase\": \"10.00\", \"quantity\": 3, \"created_at\": \"2024-04-07 01:10:38\", \"updated_at\": \"2024-04-07 13:52:13\", \"active\": true}, {\"id\": 12, \"name\": \"\\u00d3leo de jaca\", \"description\": \"Loren ipsum bla bla bla\", \"price_sale\": \"15.00\", \"price_purchase\": \"10.00\", \"quantity\": 10, \"created_at\": \"2024-04-07 01:10:30\", \"updated_at\": \"2024-04-07 01:10:30\", \"active\": true}]",
+        "origin_order": 30,
+        "created_at": "2024-04-13T20:34:19.018Z",
+        "updated_at": "2024-04-13T20:34:19.018Z",
+        "owner": 2,
+        "total_price": "189.00"
+    }
+},
+{
+    "model": "purchase.purchase",
+    "pk": 21,
+    "fields": {
+        "customer_info": "{\"first_name\": \"Jo\\u00e3o\", \"last_name\": \"Vitor\", \"email\": \"joao@vitor.com\", \"phone\": \"75995456464\", \"address\": \"joao@vitor.com\", \"created_at\": \"2024-04-06 18:58:52\", \"updated_at\": \"2024-04-06 18:58:52\", \"id\": 5}",
+        "product_info": "[{\"id\": 5, \"name\": \"Perfume 4\", \"description\": \"Description for Perfume 4\", \"price_sale\": \"1.90\", \"price_purchase\": \"5.18\", \"quantity\": 9, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}, {\"id\": 1, \"name\": \"Ess\\u00eancia 0\", \"description\": \"Description for Ess\\u00eancia 0\", \"price_sale\": \"3.95\", \"price_purchase\": \"16.30\", \"quantity\": 3, \"created_at\": \"2023-12-20 12:31:39\", \"updated_at\": \"2023-12-20 12:31:39\", \"active\": true}]",
+        "origin_order": 31,
+        "created_at": "2024-04-13T21:14:36.382Z",
+        "updated_at": "2024-04-13T21:14:36.383Z",
+        "owner": 2,
+        "total_price": "28.95"
+    }
+}
+]

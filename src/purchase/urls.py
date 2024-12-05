@@ -5,7 +5,7 @@ from purchase.views.purchase import TransformOrderToPurchaseView
 
 urlpatterns = [
     path(
-        "register-purchase",
+        "save-purchase",
         TransformOrderToPurchaseView.as_view(),
         name="transform_order_to_purchase",
     ),

@@ -1,1 +1,1 @@
-from .purchase import PurchaseSerializer
+from .purchase import PurchaseSerializer  # noqa

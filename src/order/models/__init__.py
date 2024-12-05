@@ -1,2 +1,4 @@
-from .order import Order
-from .product_order import ProductOrder
+from order.models.order import Order  # noqa
+from order.models.product_order import ProductOrder  # noqa
+
+__all__ = ["Order", "ProductOrder"]

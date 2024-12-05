@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Lucas Thomas <contatolucasthomas@gmail.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -15,6 +16,15 @@ flake8 = "^6.1.0"
 mypy = "^1.7.1"
 autopep8 = "^2.0.4"
 psycopg2-binary = "^2.9.9"
+django-cors-headers = "^4.3.1"
+types-requests = "^2.31.0.20240406"
+types-pytz = "^2024.1.0.20240417"
+gunicorn = "^22.0.0"
+django-stubs = "^4.2.7"
+djangorestframework-stubs = "^3.14.5"
+reportlab = "^4.2.0"
+pytest-django = "^4.9.0"
+django-environ = "^0.11.2"
 
 
 [build-system]

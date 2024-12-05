@@ -6,9 +6,9 @@ class Customer(models.Model):
     last_name = models.CharField(max_length=100)
     email = models.EmailField()
     phone = models.CharField(max_length=15)
-    address = models.TextField(blank=True)  # Optional field
-    cpf = models.CharField(max_length=20)  # Brazilian CPF number
-    rg = models.CharField(max_length=20, blank=True)  # Brazilian RG number, optional
+    address = models.TextField(blank=True)
+    cpf = models.CharField(max_length=20)
+    rg = models.CharField(max_length=20, blank=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
