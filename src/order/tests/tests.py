@@ -6,13 +6,6 @@ from api.base_tests import BaseAuthenticatedAPITestCase
 
 
 class OrderViewsTestCase(BaseAuthenticatedAPITestCase):
-    fixtures = [
-        "api/tests/fixtures/groups",
-        "api/tests/fixtures/users",
-        "customer/tests/fixtures/customers",
-        "order/tests/fixtures/order",
-    ]
-
     def test_order_list_view(self):
         list_order_url = reverse("order:order-list")
         response = self.client.get(list_order_url)

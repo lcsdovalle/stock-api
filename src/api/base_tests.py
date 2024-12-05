@@ -17,6 +17,23 @@ from order.models.order import Order
 )
 class BaseAuthenticatedAPITestCase(TestCase):
     def setUp(self) -> None:
+        """
+        Set up the test environment for authenticated API test cases.
+
+        This method is executed before each test case in the `BaseAuthenticatedAPITestCase`
+        class. It performs the following tasks:
+        
+        1. Loads the fixture data specified in `FIXTURES_LOAD_SEQUENCE` into the test database.
+        2. Retrieves the first order's owner as the test user.
+        3. Creates an authentication token for the test user.
+        4. Configures the `APIClient` with the token for authenticated API requests.
+        5. Forces authentication for the test client with the test user.
+
+        This ensures all test cases have a consistent and authenticated setup.
+
+        Returns:
+            None
+        """
         for fixture in FIXTURES_LOAD_SEQUENCE:
             call_command("loaddata", fixture)
         self.user = Order.objects.first().owner

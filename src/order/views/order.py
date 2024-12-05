@@ -16,6 +16,7 @@ from api.services_helpers.helpers import generate_body_message
 from api.services_helpers.printing import save_order_pdf
 from django.core.mail import EmailMessage
 from django.http import HttpResponse
+from django.core.cache import cache
 import os
 
 
@@ -36,6 +37,11 @@ class OrderListView(generics.ListAPIView):
         :return: The queryset of orders based on the provided filters.
         :rtype: QuerySet
         """
+        cache_key = f"orders:{self.request.user.id}:{self.request.query_params}"
+        cached_queryset = cache.get(cache_key)
+        if cached_queryset:
+            return cached_queryset
+        
         if (
             self.request.user.is_superuser
             or "manager" in self.request.user.groups.values_list("name", flat=True)

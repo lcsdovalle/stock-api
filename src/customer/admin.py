@@ -16,7 +16,7 @@ class MyCustomerAdmin(admin.ModelAdmin):
         "rg",
         "created_at",
         "updated_at",
-    )  # Display these fields in the admin list
+    )
     list_editable = (
         "first_name",
         "last_name",
@@ -25,7 +25,7 @@ class MyCustomerAdmin(admin.ModelAdmin):
         "address",
         "cpf",
         "rg",
-    )  # Enable editing of the discount field in the admin list
+    )
 
 
 admin_site.register(Customer, MyCustomerAdmin)

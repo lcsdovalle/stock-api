@@ -110,6 +110,7 @@ This also sends quotes to customers by email and whatsapp.
     - Increase testing cov
     - Add multitenancy
     - Add swagger documentation
+    - Add invoice integration
 
 ## Acknowledgments
 

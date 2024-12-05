@@ -21,7 +21,6 @@ def save_order_pdf(order_id):
     product_style = styles["BodyText"]
     product_style.wordWrap = "CJK"
 
-    # Create a horizontal line
     line = HRFlowable(
         width="100%",
         thickness=1,
@@ -49,7 +48,7 @@ def save_order_pdf(order_id):
     for product_order in order.productorder_set.all():
         product_name = Paragraph(
             product_order.product.name, product_style
-        )  # Wrap product names in a Paragraph
+        )
         row = [
             product_name,
             f"R${product_order.product.price_sale:.2f}",
@@ -79,6 +78,5 @@ def save_order_pdf(order_id):
     elements.append(line)
     elements.append(Paragraph(f"Feira de Santana, {now}", styles["Heading5"]))
 
-    # Build the PDF
     doc.build(elements)
     return file_path
