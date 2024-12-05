@@ -17,7 +17,7 @@ class OrderViewsTestCase(BaseAuthenticatedAPITestCase):
         list_order_url = reverse("order:order-list")
         response = self.client.get(list_order_url)
         data = response.json()
-        count = data["count"]
+        count = len(data)
 
         self.assertGreater(count, 0)
         self.assertEqual(response.status_code, 200)

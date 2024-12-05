@@ -4,7 +4,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from order.models.order import Order
 from django.shortcuts import get_object_or_404
-from api.settings import EMAIL_HOST_USER
+from api.settings.base import EMAIL_HOST_USER
 from rest_framework.response import Response
 from order.serializers.order import (
     CreateOrderSerializer,

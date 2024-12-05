@@ -12,39 +12,27 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+import environ
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+env = environ.Env()
+environ.Env.read_env(BASE_DIR / ".env")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-r0&#-b=zi-gk=8v0k&j(k%-qe9z@#y3v^mm-t_u0uv)d==isc6"
+SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = [
-    "estoque.comunicloud.com.br",
-    "api.comunicloud.com.br",
-    "speed.cloudflare.com",
-    "*.cloudflare.com",
-    "https://api.comunicloud.com.br",
-    "34.122.98.103",
-    "localhost",
-    "127.0.0.1",
-]
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=[])
 
 # Configure CORS
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",  # Allow your frontend's origin
-    "https://estoque.comunicloud.com.br",
-    "https://api.comunicloud.com.br",
-    "https://api.comunicloud.com.br",
-    "http://*",
-]
-
+CORS_ALLOWED_ORIGINS = env.list("CORS_ALLOWED_ORIGINS", default=[])
 # Application definition
 
 INSTALLED_APPS = [
@@ -112,7 +100,7 @@ DATABASES = {
         "USER": "admin",
         "PASSWORD": "zxzx1212",
         "HOST": "localhost",
-        # "HOST": "db", 
+        # "HOST": "db",
         # "PORT": "5432",
         "PORT": "5436",
     }
@@ -172,25 +160,29 @@ REST_FRAMEWORK = {
     "PAGE_SIZE": 10,  # Adjust the page size as needed
 }
 
-
 # MISC
 API_VERSION = "api/v1"
 
 # EMAIL SETTINGS
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "no-reply@seduc.feiradesantana.ba.gov.br"  # Your Gmail address
-EMAIL_HOST_PASSWORD = "zxzx1212"  # The app password you generated
+EMAIL_HOST = env("EMAIL_HOST")
+EMAIL_PORT = env.int("EMAIL_PORT")
+EMAIL_USE_TLS = env.bool("EMAIL_USE_TLS")
+EMAIL_HOST_USER = env("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 
 # FIXTURES
 FIXTURE_DIRS = [
     BASE_DIR / "tests/fixtures",
 ]
-
-# VENON-WHATSAPP-BOT
-VENON_BOT_ENDPOINT = "http://localhost:3000"
+FIXTURES_LOAD_SEQUENCE = [
+    "api/tests/fixtures/groups",
+    "api/tests/fixtures/users",
+    "customer/tests/fixtures/customers",
+    "order/tests/fixtures/order",
+]
+# VENON WPP BOT ENDPOINT
+VENON_BOT_ENDPOINT = env("VENON_BOT_ENDPOINT")
 
 # FILES MEDIA
 MEDIA_URL = "/files/"

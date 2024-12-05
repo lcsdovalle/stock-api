@@ -2,7 +2,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import include, path
 
-from api.settings import API_VERSION
+from api.settings.base import API_VERSION
 from api.views.whatsapp import WhatsappAPIView
 from users.admin import admin_site
 
