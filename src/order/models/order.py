@@ -59,7 +59,7 @@ class Order(BaseModel):
             return
         discount_decimal = Decimal(self.discount) / Decimal(
             100
-        )  # Convert float to Decimal
+        )
         discount_amount = total_price * discount_decimal
         self.total_price = total_price - discount_amount
 
