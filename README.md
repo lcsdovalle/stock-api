@@ -108,6 +108,8 @@ This also sends quotes to customers by email and whatsapp.
 10. Next
     - Add pre-commit for sanitizing and testing
     - Increase testing cov
+    - Add multitenancy
+    - Add swagger documentation
 
 ## Acknowledgments
 

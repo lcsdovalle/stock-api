@@ -26,7 +26,7 @@ LOGGING = {
     },
     "loggers": {
         "django": {
-            "handlers": ["rotating_file", "console"],
+            "handlers": ["rotating_file"],
             "level": "DEBUG",
             "propagate": True,
         },
